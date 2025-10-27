@@ -89,6 +89,7 @@ jobs:
 
       - name: Upload to release
         uses: softprops/action-gh-release@v2
+        continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           files: |
@@ -158,6 +159,7 @@ jobs:
 
       - name: Upload to release
         uses: softprops/action-gh-release@v2
+        continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           files: |
@@ -196,6 +198,7 @@ jobs:
 
       - name: Upload to release
         uses: softprops/action-gh-release@v2
+        continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
           files: build/packages/*Source*
