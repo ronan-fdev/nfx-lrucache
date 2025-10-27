@@ -30,7 +30,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
-          draft: false
+          draft: true
           prerelease: false
           generate_release_notes: true
           fail_on_unmatched_files: true
@@ -92,8 +92,7 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
-          append_body: true
-          make_latest: false
+          draft: true
           files: |
             build/packages/*.deb
             build/packages/*.rpm
@@ -164,13 +163,11 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
-          append_body: true
-          make_latest: false
+          draft: true
           files: |
             build/packages/*.msi
             build/packages/*.exe
             build/packages/*MSVC*.zip
-          overwrite_files: true
 
   #============================================================================
   # Build Source Package
@@ -205,6 +202,5 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
-          append_body: true
-          make_latest: false
+          draft: true
           files: build/packages/*Source*
