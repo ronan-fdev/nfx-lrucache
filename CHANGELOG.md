@@ -31,6 +31,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.2] - 2025-10-27
+
+### Fixed
+
+- Fixed release workflow to handle immutable releases by allowing creation step to continue on error
+
 ## [1.0.1] - 2025-10-27
 
 ### Fixed

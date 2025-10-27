@@ -33,6 +33,8 @@ jobs:
           draft: false
           prerelease: false
           generate_release_notes: true
+          fail_on_unmatched_files: true
+        continue-on-error: true
 
   #============================================================================
   # Build Linux Packages (GCC)
