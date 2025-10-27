@@ -9,7 +9,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(nfx-lrucache
-	VERSION 1.0.3
+	VERSION 1.0.4
 	DESCRIPTION "High-performance C++20 thread-safe LRU cache with sliding expiration"
 	HOMEPAGE_URL "https://github.com/ronan-fdev/nfx-lrucache"
 	LANGUAGES CXX

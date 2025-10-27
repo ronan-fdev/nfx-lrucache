@@ -31,6 +31,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.4] - 2025-10-27
+
+### Fixed
+
+- Fixed release workflow to upload assets without updating immutable release metadata
+
+## [1.0.3] - 2025-10-27
+
+### Fixed
+
+- Fixed release workflow upload steps to handle immutable releases by adding continue-on-error
+
 ## [1.0.2] - 2025-10-27
 
 ### Fixed

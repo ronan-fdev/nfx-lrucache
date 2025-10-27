@@ -92,6 +92,8 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          append_body: true
+          make_latest: false
           files: |
             build/packages/*.deb
             build/packages/*.rpm
@@ -162,6 +164,8 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          append_body: true
+          make_latest: false
           files: |
             build/packages/*.msi
             build/packages/*.exe
@@ -201,4 +205,6 @@ jobs:
         continue-on-error: true
         with:
           tag_name: ${{ github.event.inputs.tag || github.ref_name }}
+          append_body: true
+          make_latest: false
           files: build/packages/*Source*
