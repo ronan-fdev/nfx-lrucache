@@ -31,6 +31,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.1] - 2025-10-27
+
+### Fixed
+
+- Fixed release workflow race condition where multiple jobs tried to create the same release simultaneously
+
 ## [1.0.0] - 2025-10-26 - Initial Release
 
 ### Added
