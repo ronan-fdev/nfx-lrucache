@@ -9,7 +9,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(nfx-lrucache
-	VERSION 1.0.5
+	VERSION 1.0.6
 	DESCRIPTION "High-performance C++20 thread-safe LRU cache with sliding expiration"
 	HOMEPAGE_URL "https://github.com/ronan-fdev/nfx-lrucache"
 	LANGUAGES CXX
@@ -75,20 +75,20 @@ enable_testing()
 #----------------------------------------------
 
 # --- Build components (header-only library) ---
-option(NFX_LRUCACHE_BUILD_TESTS          "Build tests"                        ON )
-option(NFX_LRUCACHE_BUILD_SAMPLES        "Build samples"                      ON )
-option(NFX_LRUCACHE_BUILD_BENCHMARKS     "Build benchmarks"                   ON )
-option(NFX_LRUCACHE_BUILD_DOCUMENTATION  "Build Doxygen documentation"        ON )
+option(NFX_LRUCACHE_BUILD_TESTS          "Build tests"                         OFF )
+option(NFX_LRUCACHE_BUILD_SAMPLES        "Build samples"                       OFF )
+option(NFX_LRUCACHE_BUILD_BENCHMARKS     "Build benchmarks"                    OFF )
+option(NFX_LRUCACHE_BUILD_DOCUMENTATION  "Build Doxygen documentation"         OFF )
 
 # --- Installation ---
-option(NFX_LRUCACHE_INSTALL_PROJECT      "Install project"                    ON )
+option(NFX_LRUCACHE_INSTALL_PROJECT      "Install project"                     OFF )
 
 # --- Packaging ---
-option(NFX_LRUCACHE_PACKAGE_SOURCE       "Enable source package generation"   ON )
-option(NFX_LRUCACHE_PACKAGE_ARCHIVE      "Enable TGZ/ZIP package generation"  ON )
-option(NFX_LRUCACHE_PACKAGE_DEB          "Enable DEB package generation"      ON )
-option(NFX_LRUCACHE_PACKAGE_RPM          "Enable RPM package generation"      ON )
-option(NFX_LRUCACHE_PACKAGE_WIX          "Enable WiX Windows installer (MSI)" ON )
+option(NFX_LRUCACHE_PACKAGE_SOURCE       "Enable source package generation"    OFF )
+option(NFX_LRUCACHE_PACKAGE_ARCHIVE      "Enable TGZ/ZIP package generation"   OFF )
+option(NFX_LRUCACHE_PACKAGE_DEB          "Enable DEB package generation"       OFF )
+option(NFX_LRUCACHE_PACKAGE_RPM          "Enable RPM package generation"       OFF )
+option(NFX_LRUCACHE_PACKAGE_WIX          "Enable WiX Windows installer (MSI)"  OFF )
 
 #----------------------------------------------
 # CMake modules configuration

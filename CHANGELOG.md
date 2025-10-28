@@ -31,6 +31,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - NIL
 
+## [1.0.6] - 2025-10-28
+
+### Fixed
+
+- Fixed Doxygen configuration to use `NFX_LRUCACHE_ROOT_DIR` instead of `CMAKE_SOURCE_DIR` to correctly reference library files when used as a dependency via FetchContent or add_subdirectory
+
 ## [1.0.5] - 2025-10-27
 
 ### Fixed
