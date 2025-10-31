@@ -9,10 +9,8 @@
 set(PUBLIC_HEADERS)
 
 list(APPEND PUBLIC_HEADERS
-	# --- LRU Cache headers ---
 	${NFX_LRUCACHE_INCLUDE_DIR}/nfx/memory/LruCache.h
 
-	# --- LRU Cache implementations ---
 	${NFX_LRUCACHE_INCLUDE_DIR}/nfx/detail/memory/LruCache.inl
 )
 
