@@ -459,6 +459,10 @@ nfx-lrucache is optimized for high performance with:
 
 For detailed performance metrics and benchmarks, see the [benchmark documentation](benchmark/README.md).
 
+## Roadmap
+
+See [TODO.md](TODO.md) for upcoming features and project roadmap.
+
 ## Changelog
 
 See the [changelog](CHANGELOG.md) for a detailed history of changes, new features, and bug fixes.
@@ -476,4 +480,4 @@ All dependencies are automatically fetched via CMake FetchContent when building 
 
 ---
 
-_Updated on October 26, 2025_
+_Updated on November 8, 2025_

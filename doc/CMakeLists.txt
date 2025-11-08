@@ -217,8 +217,9 @@ if(Doxygen_FOUND)
 	# --- Documentation Target Definition ---
 	doxygen_add_docs(documentation
 		${NFX_LRUCACHE_INCLUDE_DIR}/nfx
-		${NFX_LRUCACHE_DIR}/README.md
 		${NFX_LRUCACHE_DIR}/CHANGELOG.md
+		${NFX_LRUCACHE_DIR}/README.md
+		${NFX_LRUCACHE_DIR}/TODO.md
 		${NFX_LRUCACHE_DIR}/benchmark/README.md
 		${NFX_LRUCACHE_LICENSE_FILE}
 		ALL
