@@ -24,5 +24,16 @@ Project roadmap and task tracking for the nfx-lrucache library.
 
 ### Done ✓
 
-- [x] Automated package verification and artifact uploads in release workflow #v1.0.7 2025-10-30
-- [x] Doxygen uses project-local variables (NFX_LRUCACHE_DIR instead of CMAKE_SOURCE_DIR) #v1.0.6 2025-10-28
+#### v1.0.7 (2025-10-30)
+
+- [x] Automated package verification and artifact uploads in release workflow
+- [x] SHA256 checksums for release packages
+- [x] Renamed NFX_LRUCACHE_ROOT_DIR to NFX_LRUCACHE_DIR
+
+#### v1.0.6 (2025-10-28)
+
+- [x] Doxygen uses project-local variables (NFX_LRUCACHE_DIR instead of CMAKE_SOURCE_DIR)
+
+#### v1.0.5 through v1.0.1 (2025-10-27)
+
+- [x] CI/CD workflow fixes and improvements
